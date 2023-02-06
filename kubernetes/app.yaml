@@ -44,7 +44,7 @@ metadata:
               'f:terminationGracePeriodSeconds': {}
       manager: GoogleCloudConsole
       operation: Update
-      time: '2023-02-06T04:37:57Z'
+      time: '2023-02-06T06:10:41Z'
     - apiVersion: apps/v1
       fieldsType: FieldsV1
       fieldsV1:
@@ -79,9 +79,9 @@ metadata:
       manager: kube-controller-manager
       operation: Update
       subresource: status
-      time: '2023-02-06T04:38:24Z'
+      time: '2023-02-06T06:10:44Z'
   name: hello-world
-  namespace: dat-test
+  namespace: dathm-ns
 spec:
   replicas: 3
   selector:
@@ -125,7 +125,7 @@ metadata:
             'f:name': {}
       manager: GoogleCloudConsole
       operation: Update
-      time: '2023-02-06T04:37:58Z'
+      time: '2023-02-06T06:10:41Z'
     - apiVersion: autoscaling/v2
       fieldsType: FieldsV1
       fieldsV1:
@@ -159,9 +159,9 @@ metadata:
       manager: vpa-recommender
       operation: Update
       subresource: status
-      time: '2023-02-06T04:38:29Z'
-  name: hello-world-hpa-dce4
-  namespace: dat-test
+      time: '2023-02-06T06:11:27Z'
+  name: hello-world-hpa-h80y
+  namespace: dathm-ns
 spec:
   maxReplicas: 5
   metrics:
@@ -210,7 +210,7 @@ metadata:
           'f:type': {}
       manager: GoogleCloudConsole
       operation: Update
-      time: '2023-02-06T04:39:29Z'
+      time: '2023-02-06T06:10:49Z'
     - apiVersion: v1
       fieldsType: FieldsV1
       fieldsV1:
@@ -224,21 +224,21 @@ metadata:
       manager: kube-controller-manager
       operation: Update
       subresource: status
-      time: '2023-02-06T04:40:26Z'
+      time: '2023-02-06T06:11:31Z'
   name: hello-world-service
-  namespace: dat-test
+  namespace: dathm-ns
 spec:
   allocateLoadBalancerNodePorts: true
-  clusterIP: 10.12.11.18
+  clusterIP: 10.12.4.167
   clusterIPs:
-    - 10.12.11.18
+    - 10.12.4.167
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
     - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-    - nodePort: 32166
+    - nodePort: 32305
       port: 8080
       protocol: TCP
       targetPort: 8080
